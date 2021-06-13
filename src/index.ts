@@ -1,6 +1,6 @@
 //importing classes & utils
 import { CsvFileReader } from './CsvFileReader';
-import { MatchResult } from './MatchResult';
+import { MatchResult } from './types';
 
 //reading & parsing csv data
 const reader = new CsvFileReader('football.csv');
@@ -18,4 +18,4 @@ for (let match of reader.data) {
 }
 
 //generating a report
-console.log(`man yunited won ${manUnitedWins} games!`);
+console.log(`Man United won ${manUnitedWins} games!`);
