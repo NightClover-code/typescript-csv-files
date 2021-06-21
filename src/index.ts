@@ -2,6 +2,7 @@
 import { CsvFileReader } from './CsvFileReader';
 import { MatchReader } from './MatchReader';
 import { ConsoleReport } from './reports/ConsoleReport';
+import { HtmlReport } from './reports/HtmlReport';
 import { WinsAnalysis } from './analyzers/WinsAnalisis';
 import { Summary } from './Summary';
 
@@ -12,10 +13,7 @@ const matchReader = new MatchReader(csvFileReader);
 matchReader.load();
 
 //analyzing data
-const summary = new Summary(
-  new WinsAnalysis('Man United'),
-  new ConsoleReport()
-);
+const summary = new Summary(new WinsAnalysis('Man United'), new HtmlReport());
 
 //generating a report
 summary.buildAndPrintReport(matchReader.matches);
