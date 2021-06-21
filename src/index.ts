@@ -1,6 +1,6 @@
 //importing classes & utils
-import { MatchReader } from './MatchReader';
-import { Summary } from './Summary';
+import { MatchReader } from './composition/MatchReader';
+import { Summary } from './composition/Summary';
 
 //reading & parsing csv data
 const matchReader = MatchReader.fromCsv('football.csv');

@@ -1,4 +1,4 @@
-import { MatchData } from './types';
+import { MatchData } from '../types';
 import { WinsAnalysis } from './analyzers/WinsAnalisis';
 import { HtmlReport } from './reports/HtmlReport';
 

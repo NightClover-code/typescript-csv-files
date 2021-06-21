@@ -1,5 +1,5 @@
-import { MatchData, MatchResult } from './types';
-import { dateStringToDate } from './utils';
+import { MatchData, MatchResult } from '../types';
+import { dateStringToDate } from '../utils';
 import { CsvFileReader } from './CsvFileReader';
 
 interface DataReader {
