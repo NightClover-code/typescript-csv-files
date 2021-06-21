@@ -1,5 +1,4 @@
-import { MatchData } from '../types';
-import { WinsAnalysis } from './analyzers/WinsAnalisis';
+import { WinsAnalysis } from './analyzers/WinsAnalysis';
 import { HtmlReport } from './reports/HtmlReport';
 
 export interface Analyzer {
