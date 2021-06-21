@@ -1,14 +1,14 @@
 import fs from 'fs';
 
 export abstract class CsvFileReader<T> {
-  data: T[] = [];
+  matches: T[] = [];
 
   constructor(public filename: string) {}
 
   abstract mapRow(row: string[]): T;
 
   read(): void {
-    this.data = fs
+    this.matches = fs
       .readFileSync(this.filename, {
         encoding: 'utf-8',
       })
